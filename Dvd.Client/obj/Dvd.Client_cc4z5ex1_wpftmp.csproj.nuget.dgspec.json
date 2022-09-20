@@ -1,0 +1,249 @@
+{
+	"format": 1,
+	"restore": {
+		"C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Client\\Dvd.Client.csproj": {}
+	},
+	"projects": {
+		"C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Application\\Dvd.Application.csproj": {
+			"version": "1.0.0",
+			"restore": {
+				"projectUniqueName": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Application\\Dvd.Application.csproj",
+				"projectName": "Dvd.Application",
+				"projectPath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Application\\Dvd.Application.csproj",
+				"packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
+				"outputPath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Application\\obj\\",
+				"projectStyle": "PackageReference",
+				"configFilePaths": [
+					"C:\\Users\\vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+					"C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+				],
+				"originalTargetFrameworks": ["net6.0"],
+				"sources": {
+					"C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+					"https://api.nuget.org/v3/index.json": {}
+				},
+				"frameworks": {
+					"net6.0": {
+						"targetAlias": "net6.0",
+						"projectReferences": {
+							"C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Domain\\Dvd.Domain.csproj": {
+								"projectPath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Domain\\Dvd.Domain.csproj"
+							}
+						}
+					}
+				},
+				"warningProperties": {
+					"warnAsError": ["NU1605"]
+				}
+			},
+			"frameworks": {
+				"net6.0": {
+					"targetAlias": "net6.0",
+					"dependencies": {
+						"MediatR": {
+							"target": "Package",
+							"version": "[9.0.0, )"
+						}
+					},
+					"imports": [
+						"net461",
+						"net462",
+						"net47",
+						"net471",
+						"net472",
+						"net48",
+						"net481"
+					],
+					"assetTargetFallback": true,
+					"warn": true,
+					"frameworkReferences": {
+						"Microsoft.NETCore.App": {
+							"privateAssets": "all"
+						}
+					},
+					"runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+				}
+			}
+		},
+		"C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Client\\Dvd.Client.csproj": {
+			"version": "1.0.0",
+			"restore": {
+				"projectUniqueName": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Client\\Dvd.Client.csproj",
+				"projectName": "Dvd.Client",
+				"projectPath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Client\\Dvd.Client.csproj",
+				"packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
+				"outputPath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Client\\obj\\",
+				"projectStyle": "PackageReference",
+				"configFilePaths": [
+					"C:\\Users\\vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+					"C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+				],
+				"originalTargetFrameworks": ["net6.0-windows"],
+				"sources": {
+					"C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+					"https://api.nuget.org/v3/index.json": {}
+				},
+				"frameworks": {
+					"net6.0-windows7.0": {
+						"targetAlias": "net6.0-windows",
+						"projectReferences": {
+							"C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Domain\\Dvd.Domain.csproj": {
+								"projectPath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Domain\\Dvd.Domain.csproj"
+							},
+							"C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Persistent\\Dvd.Persistent.csproj": {
+								"projectPath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Persistent\\Dvd.Persistent.csproj"
+							}
+						}
+					}
+				},
+				"warningProperties": {
+					"warnAsError": ["NU1605"]
+				}
+			},
+			"frameworks": {
+				"net6.0-windows7.0": {
+					"targetAlias": "net6.0-windows",
+					"imports": [
+						"net461",
+						"net462",
+						"net47",
+						"net471",
+						"net472",
+						"net48",
+						"net481"
+					],
+					"assetTargetFallback": true,
+					"warn": true,
+					"frameworkReferences": {
+						"Microsoft.NETCore.App": {
+							"privateAssets": "all"
+						},
+						"Microsoft.WindowsDesktop.App.WPF": {
+							"privateAssets": "none"
+						}
+					},
+					"runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+				}
+			}
+		},
+		"C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Domain\\Dvd.Domain.csproj": {
+			"version": "1.0.0",
+			"restore": {
+				"projectUniqueName": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Domain\\Dvd.Domain.csproj",
+				"projectName": "Dvd.Domain",
+				"projectPath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Domain\\Dvd.Domain.csproj",
+				"packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
+				"outputPath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Domain\\obj\\",
+				"projectStyle": "PackageReference",
+				"configFilePaths": [
+					"C:\\Users\\vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+					"C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+				],
+				"originalTargetFrameworks": ["net6.0"],
+				"sources": {
+					"C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+					"https://api.nuget.org/v3/index.json": {}
+				},
+				"frameworks": {
+					"net6.0": {
+						"targetAlias": "net6.0",
+						"projectReferences": {}
+					}
+				},
+				"warningProperties": {
+					"warnAsError": ["NU1605"]
+				}
+			},
+			"frameworks": {
+				"net6.0": {
+					"targetAlias": "net6.0",
+					"imports": [
+						"net461",
+						"net462",
+						"net47",
+						"net471",
+						"net472",
+						"net48",
+						"net481"
+					],
+					"assetTargetFallback": true,
+					"warn": true,
+					"frameworkReferences": {
+						"Microsoft.NETCore.App": {
+							"privateAssets": "all"
+						}
+					},
+					"runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+				}
+			}
+		},
+		"C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Persistent\\Dvd.Persistent.csproj": {
+			"version": "1.0.0",
+			"restore": {
+				"projectUniqueName": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Persistent\\Dvd.Persistent.csproj",
+				"projectName": "Dvd.Persistent",
+				"projectPath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Persistent\\Dvd.Persistent.csproj",
+				"packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
+				"outputPath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Persistent\\obj\\",
+				"projectStyle": "PackageReference",
+				"configFilePaths": [
+					"C:\\Users\\vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+					"C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+				],
+				"originalTargetFrameworks": ["net6.0"],
+				"sources": {
+					"C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+					"https://api.nuget.org/v3/index.json": {}
+				},
+				"frameworks": {
+					"net6.0": {
+						"targetAlias": "net6.0",
+						"projectReferences": {
+							"C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Application\\Dvd.Application.csproj": {
+								"projectPath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Application\\Dvd.Application.csproj"
+							},
+							"C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Domain\\Dvd.Domain.csproj": {
+								"projectPath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Domain\\Dvd.Domain.csproj"
+							}
+						}
+					}
+				},
+				"warningProperties": {
+					"warnAsError": ["NU1605"]
+				}
+			},
+			"frameworks": {
+				"net6.0": {
+					"targetAlias": "net6.0",
+					"dependencies": {
+						"MediatR": {
+							"target": "Package",
+							"version": "[10.0.1, )"
+						},
+						"System.Configuration.ConfigurationManager": {
+							"target": "Package",
+							"version": "[6.0.1, )"
+						}
+					},
+					"imports": [
+						"net461",
+						"net462",
+						"net47",
+						"net471",
+						"net472",
+						"net48",
+						"net481"
+					],
+					"assetTargetFallback": true,
+					"warn": true,
+					"frameworkReferences": {
+						"Microsoft.NETCore.App": {
+							"privateAssets": "all"
+						}
+					},
+					"runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+				}
+			}
+		}
+	}
+}

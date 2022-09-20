@@ -1,0 +1,12 @@
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Domain\bin\Debug\net6.0\Dvd.Domain.deps.json
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Domain\bin\Debug\net6.0\Dvd.Domain.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Domain\bin\Debug\net6.0\Dvd.Domain.pdb
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Domain\obj\Debug\net6.0\Dvd.Domain.csproj.AssemblyReference.cache
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Domain\obj\Debug\net6.0\Dvd.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Domain\obj\Debug\net6.0\Dvd.Domain.AssemblyInfoInputs.cache
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Domain\obj\Debug\net6.0\Dvd.Domain.AssemblyInfo.cs
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Domain\obj\Debug\net6.0\Dvd.Domain.csproj.CoreCompileInputs.cache
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Domain\obj\Debug\net6.0\Dvd.Domain.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Domain\obj\Debug\net6.0\refint\Dvd.Domain.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Domain\obj\Debug\net6.0\Dvd.Domain.pdb
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Domain\obj\Debug\net6.0\ref\Dvd.Domain.dll

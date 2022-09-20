@@ -1,0 +1,5 @@
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Persistent\obj\Debug\netstandard2.0\Dvd.Persistent.csproj.AssemblyReference.cache
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Persistent\obj\Debug\netstandard2.0\Dvd.Persistent.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Persistent\obj\Debug\netstandard2.0\Dvd.Persistent.AssemblyInfoInputs.cache
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Persistent\obj\Debug\netstandard2.0\Dvd.Persistent.AssemblyInfo.cs
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Persistent\obj\Debug\netstandard2.0\Dvd.Persistent.csproj.CoreCompileInputs.cache

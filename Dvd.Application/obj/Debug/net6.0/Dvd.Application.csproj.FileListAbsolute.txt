@@ -1,0 +1,15 @@
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Application\obj\Debug\net6.0\Dvd.Application.csproj.AssemblyReference.cache
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Application\obj\Debug\net6.0\Dvd.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Application\obj\Debug\net6.0\Dvd.Application.AssemblyInfoInputs.cache
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Application\obj\Debug\net6.0\Dvd.Application.AssemblyInfo.cs
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Application\obj\Debug\net6.0\Dvd.Application.csproj.CoreCompileInputs.cache
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Application\bin\Debug\net6.0\Dvd.Application.deps.json
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Application\bin\Debug\net6.0\Dvd.Application.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Application\bin\Debug\net6.0\Dvd.Application.pdb
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Application\bin\Debug\net6.0\Dvd.Domain.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Application\bin\Debug\net6.0\Dvd.Domain.pdb
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Application\obj\Debug\net6.0\Dvd.Application.csproj.CopyComplete
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Application\obj\Debug\net6.0\Dvd.Application.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Application\obj\Debug\net6.0\refint\Dvd.Application.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Application\obj\Debug\net6.0\Dvd.Application.pdb
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Application\obj\Debug\net6.0\ref\Dvd.Application.dll
