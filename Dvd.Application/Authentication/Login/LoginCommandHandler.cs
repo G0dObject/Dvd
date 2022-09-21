@@ -13,7 +13,12 @@ namespace Dvd.Application.Authentication.Login
 		}
 		async Task<User> IRequestHandler<LoginCommand, User>.Handle(LoginCommand request, CancellationToken cancellationToken)
 		{
-			throw new NotImplementedException();
+			
+			foreach (var auth in await _unitOfWork.Authorization.GetAllAsync())
+			{
+				
+			}
+			return new User();
 		}
 	}
 }

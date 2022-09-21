@@ -8,7 +8,9 @@ namespace Dvd.Persistent.EntityTypeConfiguration
 	{
 		public void Configure(EntityTypeBuilder<Role> builder)
 		{
-			_ = builder.HasKey(u => u.Name);
+			_ = builder.HasKey(r => r.Id);
+			_ = builder.Property(r => r.Name);
+
 		}
 	}
 }

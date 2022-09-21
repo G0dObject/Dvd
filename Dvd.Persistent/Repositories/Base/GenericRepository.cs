@@ -32,8 +32,9 @@ namespace Dvd.Persistent.Repositories.Base
 		public virtual Task<List<T>> GetAllAsync()
 		{
 			return _context.Set<T>().ToListAsync();
-
 		}
+
+		
 
 		public Task<T?> GetByIdAsync(int id)
 		{

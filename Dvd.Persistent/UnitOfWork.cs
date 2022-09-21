@@ -3,11 +3,13 @@ using Dvd.Application.Interfaces.BusinessLogic;
 using Dvd.Persistent.Repositories;
 using System.Net;
 
+
 namespace Dvd.Persistent
 {
-	public class UnitOfWork : IUnitOfWork
+	public class UnitOfWork : IUnitOfWork,IDisposable
 	{
-		public Context _context;
+		private Context _context; 
+		private bool _disposed = false;
 		public UnitOfWork(Context context)
 		{
 			_context = context;
@@ -15,5 +17,14 @@ namespace Dvd.Persistent
 		}
 
 		public IAuthorizationRepository Authorization { get; set; }
+
+		public virtual void Dispose()
+		{
+			if (!_disposed)
+			{
+				_context.Dispose();
+				_disposed = true;
+			}
+		}
 	}
 }

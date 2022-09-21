@@ -16,8 +16,7 @@ namespace Client.Pages
 			Context g = new Context(new DbContextOptions<Context>());
 			
 			UnitOfWork unitOfWork = new UnitOfWork(g);
-			
-			
+
 		}
 	}
 }

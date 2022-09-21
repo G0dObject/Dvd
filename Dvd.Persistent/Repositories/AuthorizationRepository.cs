@@ -4,7 +4,7 @@ using System.Net;
 
 namespace Dvd.Persistent.Repositories
 {
-	internal class AuthorizationRepository : GenericRepository<Authorization>, IAuthorizationRepository
+	public class AuthorizationRepository : GenericRepository<Authorization>, IAuthorizationRepository
 	{
 		Context _context;
 		public AuthorizationRepository(Context context) : base(context)
@@ -12,6 +12,5 @@ namespace Dvd.Persistent.Repositories
 			_context = context;
 		}
 		public bool Correct {get; set;}
-		
 	}
 }
