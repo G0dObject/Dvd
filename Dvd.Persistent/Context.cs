@@ -17,7 +17,7 @@ namespace Dvd.Persistent
 		{
 			if (!optionsBuilder.IsConfigured)
 			{
-				_ = optionsBuilder.UseSqlite(ConfigurationManager.ConnectionStrings["SqLite"].ConnectionString);
+				var g = optionsBuilder.UseSqlite(ConfigurationManager.ConnectionStrings["SqLite"].ConnectionString);
 			}
 		}
 		protected override void OnModelCreating(ModelBuilder option)

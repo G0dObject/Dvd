@@ -13,3 +13,5 @@ C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Application\obj\Debug\
 C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Application\obj\Debug\net6.0\refint\Dvd.Application.dll
 C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Application\obj\Debug\net6.0\Dvd.Application.pdb
 C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Application\obj\Debug\net6.0\ref\Dvd.Application.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Application\bin\Debug\net6.0\Cqrs.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Application\bin\Debug\net6.0\Cqrs.pdb

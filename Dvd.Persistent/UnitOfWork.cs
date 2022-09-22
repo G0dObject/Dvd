@@ -1,8 +1,6 @@
 ﻿using Dvd.Application.Interfaces;
 using Dvd.Application.Interfaces.BusinessLogic;
 using Dvd.Persistent.Repositories;
-using System.Net;
-
 
 namespace Dvd.Persistent
 {

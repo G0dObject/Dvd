@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenter", "Presenter", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dvd.Client", "Dvd.Client\Dvd.Client.csproj", "{DB9CC118-8909-415E-B4FC-D0946A1C8241}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cqrs", "Cqrs\Cqrs.csproj", "{60FFFE63-9073-42E4-80D6-612B6B38FEA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{DB9CC118-8909-415E-B4FC-D0946A1C8241}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB9CC118-8909-415E-B4FC-D0946A1C8241}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB9CC118-8909-415E-B4FC-D0946A1C8241}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60FFFE63-9073-42E4-80D6-612B6B38FEA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60FFFE63-9073-42E4-80D6-612B6B38FEA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60FFFE63-9073-42E4-80D6-612B6B38FEA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60FFFE63-9073-42E4-80D6-612B6B38FEA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

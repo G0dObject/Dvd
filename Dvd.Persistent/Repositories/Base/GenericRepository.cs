@@ -1,6 +1,5 @@
 ﻿using Dvd.Application.Interfaces.BusinessLogic.Base;
 using Microsoft.EntityFrameworkCore;
-using System.Configuration;
 
 namespace Dvd.Persistent.Repositories.Base
 {
@@ -9,18 +8,18 @@ namespace Dvd.Persistent.Repositories.Base
 		internal readonly Context _context;
 		public GenericRepository(Context context)
 		{
-			_context=context;
+			_context = context;
 		}
 		public async Task<T> CreateAsync(T entity)
 		{
-			await _context.AddAsync(entity);
-			await _context.SaveChangesAsync();
+			_ = await _context.AddAsync(entity);
+			_ = await _context.SaveChangesAsync();
 			return entity;
 		}
 
 		public Task Delete(T entity)
 		{
-			_context.Remove(entity);
+			_ = _context.Remove(entity);
 			return Task.CompletedTask;
 		}
 
@@ -34,7 +33,7 @@ namespace Dvd.Persistent.Repositories.Base
 			return _context.Set<T>().ToListAsync();
 		}
 
-		
+
 
 		public Task<T?> GetByIdAsync(int id)
 		{
@@ -46,6 +45,9 @@ namespace Dvd.Persistent.Repositories.Base
 			throw new NotImplementedException();
 		}
 
-		public Task UpdateAsync(T entity) => Task.FromResult(entity);
+		public Task UpdateAsync(T entity)
+		{
+			return Task.FromResult(entity);
+		}
 	}
 }

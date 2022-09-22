@@ -16,7 +16,10 @@ namespace Dvd.Application.Authentication.Login
 			
 			foreach (var auth in await _unitOfWork.Authorization.GetAllAsync())
 			{
-				
+				if (request.UserName == auth.UserName && request.Password == auth.Password)
+				{
+					
+				}
 			}
 			return new User();
 		}

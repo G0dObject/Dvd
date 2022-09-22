@@ -1,6 +1,7 @@
 ﻿using Dvd.Application.Interfaces.BusinessLogic;
 using Dvd.Persistent.Repositories.Base;
 using System.Net;
+using Authorization = Dvd.Domain.Entity.Authorization.Authorization;
 
 namespace Dvd.Persistent.Repositories
 {

@@ -4,6 +4,61 @@
     "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Client\\Dvd.Client.csproj": {}
   },
   "projects": {
+    "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Cqrs\\Cqrs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Cqrs\\Cqrs.csproj",
+        "projectName": "Cqrs",
+        "projectPath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Cqrs\\Cqrs.csproj",
+        "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Cqrs\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Application\\Dvd.Application.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -28,6 +83,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Cqrs\\Cqrs.csproj": {
+                "projectPath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Cqrs\\Cqrs.csproj"
+              },
               "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Domain\\Dvd.Domain.csproj": {
                 "projectPath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Domain\\Dvd.Domain.csproj"
               }
@@ -46,7 +104,7 @@
           "dependencies": {
             "MediatR": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[10.0.1, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -256,6 +314,10 @@
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[6.0.9, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.4, )"
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",

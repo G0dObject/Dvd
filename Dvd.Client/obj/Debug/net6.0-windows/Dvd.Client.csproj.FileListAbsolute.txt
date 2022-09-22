@@ -65,3 +65,14 @@ C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.
 C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\Cqrs.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\Ubiety.Dns.Core.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\MySql.EntityFrameworkCore.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\Cqrs.pdb

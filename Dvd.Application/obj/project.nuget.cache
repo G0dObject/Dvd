@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "MVN1NmcT/De9CbpKaMFMVTqt/KewyC4sQR32QDXPS1WZkXZF0yhtthkUlFcWSWoD1dpgxnPhbHy3PHz7iw39uQ==",
+  "dgSpecHash": "hvdbrQNta3sU+Bg0bDj9QR8fx15xkgnLoMfG3keg3NJYdv/FKafTPGMi/2rKziNEW4dhoLqnC/TNBXDOzRhqRQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Application\\Dvd.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vladi\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\vladi\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\vladi\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\vladi\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.9\\microsoft.entityframeworkcore.6.0.9.nupkg.sha512",
     "C:\\Users\\vladi\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.9\\microsoft.entityframeworkcore.abstractions.6.0.9.nupkg.sha512",
     "C:\\Users\\vladi\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.9\\microsoft.entityframeworkcore.analyzers.6.0.9.nupkg.sha512",
