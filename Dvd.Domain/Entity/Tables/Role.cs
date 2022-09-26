@@ -2,10 +2,9 @@
 
 namespace Dvd.Domain.Entity.Tables
 {
-    public class Role : EntityBase
+	public class Role : EntityBase
 	{
-        public int Name { get; set; }
-        virtual public ICollection<User> Users {get;set;}
-
+		public string Name { get; set; }
+		public virtual ICollection<User> Users { get; set; }
 	}
 }

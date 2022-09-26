@@ -2,8 +2,8 @@
 
 namespace Cqrs.Query
 {
-	public interface IQueryHandler<in TRequest, TQuery> where TRequest : class, ICommand<TQuery> where TQuery : class
+	public interface IQueryHandler<in TRequest, TQuery> where TRequest : IQuery<TQuery>
 	{
-
+		public Task<TQuery> Handle(TRequest request);
 	}
 }

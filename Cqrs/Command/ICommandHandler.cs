@@ -1,8 +1,8 @@
 ﻿namespace Cqrs.Command
 {
-    public interface ICommandHandler<in TRequest, TCommand> where TRequest : class, ICommand<TCommand> where TCommand : class
+    public interface ICommandHandler<in TRequest, TCommand> where TRequest : ICommand<TCommand>
     {
-
+        public Task<TCommand> Handle(TRequest request);
     }
 }
 

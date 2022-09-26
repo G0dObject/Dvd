@@ -12,7 +12,8 @@ namespace Dvd.Persistent.Repositories.Base
 		}
 		public async Task<T> CreateAsync(T entity)
 		{
-			_ = await _context.AddAsync(entity);
+
+			_ = await _context.Set<T>().AddAsync(entity);
 			_ = await _context.SaveChangesAsync();
 			return entity;
 		}
@@ -23,18 +24,15 @@ namespace Dvd.Persistent.Repositories.Base
 			return Task.CompletedTask;
 		}
 
-		public Task<T?> FirstAsync()
+		public async Task<T?> FirstAsync()
 		{
-			throw new NotImplementedException();
+			return await _context.Set<T>().FirstOrDefaultAsync();
 		}
 
 		public virtual Task<List<T>> GetAllAsync()
 		{
 			return _context.Set<T>().ToListAsync();
 		}
-
-
-
 		public Task<T?> GetByIdAsync(int id)
 		{
 			throw new NotImplementedException();

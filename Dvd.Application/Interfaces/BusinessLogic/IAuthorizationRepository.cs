@@ -1,11 +1,10 @@
 ﻿using Dvd.Application.Interfaces.BusinessLogic.Base;
-using System.Net;
-using Authorization = Dvd.Domain.Entity.Authorization.Authorization;
+using Dvd.Domain.Entity.Tables;
 
 namespace Dvd.Application.Interfaces.BusinessLogic
 {
-    public interface IAuthorizationRepository : IGenericRepository<Authorization>
+    public interface IAuthorizationRepository : IGenericRepository<User>
     {
-        public bool Correct { get; set; }
+        public Task<Role> GetDefaultRole();
     }
 }
