@@ -78,3 +78,6 @@ C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.
 C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\Cqrs.pdb
 C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\AutoMapper.dll
 C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\ReactiveValidation.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\obj\Debug\net6.0-windows\Pages\Main.g.cs
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\obj\Debug\net6.0-windows\Pages\Main.baml
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\obj\Debug\net6.0-windows\App.baml

@@ -24,32 +24,68 @@
 				<Label Height="100px" Foreground="White" Content="Register" FontSize="60px" Margin="361,76,320,904" />
 
 				<Label Visibility="Visible" Foreground="White" Content="USERNAME" FontSize="30px" Margin="100,164,659,862" RenderTransformOrigin="0.541,0.16" />
-				<TextBox Name="RUsername" Width="755" HorizontalAlignment="Center" BorderThickness="1"  Foreground="White" FontSize="60px" Background="Transparent" BorderBrush="WhiteSmoke"    VerticalAlignment="Top" CaretBrush="Transparent" Margin="100,219,100,0" ></TextBox>
+				<TextBox  Name="RUsername" Width="755" HorizontalAlignment="Center" BorderThickness="1"  Foreground="White" FontSize="60px" Background="Transparent" BorderBrush="WhiteSmoke" VerticalAlignment="Top" CaretBrush="Transparent" Margin="100,219,100,0" Validation.ErrorTemplate="{StaticResource validationFailed}" >
+					<Binding Path="UserName">
+						<Binding.ValidationRules>
+							<ExceptionValidationRule/>
+							<DataErrorValidationRule/>
+						</Binding.ValidationRules>
+					</Binding>
+				</TextBox>
 
 				<Label Foreground="White" Content="PASSWORD" FontSize="30px" Margin="100,307,633,719" RenderTransformOrigin="0.541,0.16" />
 				<Grid Margin="100,367,100,630" VerticalAlignment="Center">
-					<PasswordBox x:Name="RPassword" Width="755" HorizontalAlignment="Center" PasswordChar="•" BorderThickness="1"  Foreground="White" FontSize="60px" Background="Transparent" BorderBrush="WhiteSmoke" VerticalAlignment="Center" CaretBrush="Transparent" ></PasswordBox>
+					<TextBox  x:Name="RPassword"  Width="755" HorizontalAlignment="Center" BorderThickness="1"  Foreground="White" FontSize="60px" Background="Transparent" BorderBrush="WhiteSmoke" VerticalAlignment="Top" CaretBrush="Transparent"  Validation.ErrorTemplate="{StaticResource validationFailed}">
+						<Binding Path="Password">
+							<Binding.ValidationRules>
+								<ExceptionValidationRule/>
+								<DataErrorValidationRule/>
+							</Binding.ValidationRules>
+						</Binding>
+					</TextBox>
 				</Grid>
 
 				<Label Foreground="White" Content="CONFIRM PASSWORD" FontSize="30px" Margin="100,455,463,571" RenderTransformOrigin="0.541,0.16" />
 				<Grid Margin="100,515,100,486">
-					<PasswordBox x:Name="RPasswordConfirm" Width="755" HorizontalAlignment="Center" PasswordChar="•" BorderThickness="1"  Foreground="White" FontSize="60px" Background="Transparent" BorderBrush="WhiteSmoke" VerticalAlignment="Top" CaretBrush="Transparent" ></PasswordBox>
+					<TextBox  x:Name="RPasswordConfirm"  Width="755" HorizontalAlignment="Center" BorderThickness="1"  Foreground="White" FontSize="60px" Background="Transparent" BorderBrush="WhiteSmoke" VerticalAlignment="Top" CaretBrush="Transparent"  Validation.ErrorTemplate="{StaticResource validationFailed}">
+						<Binding Path="PasswordConfirm">
+							<Binding.ValidationRules>
+								<ExceptionValidationRule/>
+								<DataErrorValidationRule/>
+							</Binding.ValidationRules>
+						</Binding>
+					</TextBox>
 				</Grid>
+				
 				<Button Content="Create Account" HorizontalAlignment="Center" Margin="0,799,0,0" Background="#2be4c4" Foreground="White" FontSize="30px" VerticalAlignment="Top" Height="116" Width="725" Click="RegistrationButton"/>
+				
 				<Label Name="RURequired" Visibility="Hidden" Foreground="Red"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="275,175,0,0" VerticalAlignment="Top" Content="[required]" Height="32" Width="86" FontSize="16" RenderTransformOrigin="-0.628,0.531"/>
 				<Label Name="RPRequired" Visibility="Hidden" Foreground="Red"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="275,318,0,0" VerticalAlignment="Top" Content="[required]" Height="32" Width="86" FontSize="16" RenderTransformOrigin="-0.628,0.531"/>
 				<Label Name="RPRRequired" Visibility="Hidden" Foreground="Red"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,466,0,0" VerticalAlignment="Top" Content="[required]" Height="32" Width="86" FontSize="16" RenderTransformOrigin="-0.628,0.531"/>
 			</Grid>
 
 			<Grid Name="Login" Visibility="Hidden">
-				<Label Height="100px" HorizontalAlignment="Left"  Foreground="White" Content="Login" FontSize="60px" Margin="351,75,0,905" Width="222" />
+				<Label Height="100px" HorizontalAlignment="Left"  Foreground="White" Content="Login" FontSize="60px" Margin="351,75,0,905" Width="222"/>
 
 				<Label Foreground="White" Content="USERNAME" FontSize="30px" Margin="100,164,659,862" RenderTransformOrigin="0.541,0.16" />
-				<TextBox  Name="LUsername" Width="755" HorizontalAlignment="Center" BorderThickness="1"  Foreground="White" FontSize="60px" Background="Transparent" BorderBrush="WhiteSmoke"    VerticalAlignment="Top" CaretBrush="Transparent" Margin="100,219,100,0" ></TextBox>
+				<TextBox  Name="LUsername" Width="755" HorizontalAlignment="Center" BorderThickness="1"  Foreground="White" FontSize="60px" Background="Transparent" BorderBrush="WhiteSmoke" VerticalAlignment="Top" CaretBrush="Transparent" Margin="100,219,100,0" Validation.ErrorTemplate="{StaticResource validationFailed}" >
+					<Binding Path="UserName">
+						<Binding.ValidationRules>
+							<DataErrorValidationRule />
+						</Binding.ValidationRules>
+					</Binding>
+				</TextBox>
 
 				<Label Foreground="White" Content="PASSWORD" FontSize="30px" Margin="100,307,633,719" RenderTransformOrigin="0.541,0.16" />
 				<Grid Margin="100,367,100,630" VerticalAlignment="Center">
-					<PasswordBox Name="LPassword" Width="755" HorizontalAlignment="Center" PasswordChar="•" BorderThickness="1"  Foreground="White" FontSize="60px" Background="Transparent" BorderBrush="WhiteSmoke" VerticalAlignment="Center" CaretBrush="Transparent" ></PasswordBox>
+					<TextBox Name="LPassword" Width="755" HorizontalAlignment="Center" BorderThickness="1"  Foreground="White" FontSize="60px" Background="Transparent" BorderBrush="WhiteSmoke" VerticalAlignment="Center" CaretBrush="Transparent" Validation.ErrorTemplate="{StaticResource validationFailed}">
+						<Binding Path="Password">
+							<Binding.ValidationRules>
+								<ExceptionValidationRule/>
+								<DataErrorValidationRule/>
+							</Binding.ValidationRules>
+						</Binding>
+					</TextBox>
 				</Grid>
 				<Button Content="Log in to Account" HorizontalAlignment="Center" Margin="0,799,0,0" Background="#2be4c4" Foreground="White" FontSize="30px" VerticalAlignment="Top" Height="116" Width="725" Click="LoginButton"/>
 				<Label Name="LURequired" Visibility="Hidden" Foreground="Red"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="275,175,0,0" VerticalAlignment="Top" Content="[required]" Height="32" Width="86" FontSize="16" RenderTransformOrigin="-0.628,0.531"/>

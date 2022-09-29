@@ -3,8 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Dvd.Client"
              StartupUri="Pages/Authentication.xaml">
-    <Application.Resources>
-         
-    </Application.Resources>
+	<Application.Resources>
+		<ControlTemplate x:Key="validationFailed">
+			<StackPanel Orientation="Horizontal">
+				<Border BorderBrush="Violet" BorderThickness="2">
+					<AdornedElementPlaceholder />
+				</Border>
+				<TextBlock Foreground="Red" FontSize="26" FontWeight="Bold">*</TextBlock>
+			</StackPanel>
+			
+		</ControlTemplate>
+
+		<Style TargetType="TextBox">
+			<Style.Triggers>
+				<Trigger Property="Validation.HasError" Value="True">
+					<Trigger.Setters>
+						<Setter Property="ToolTip"
+                Value="{Binding RelativeSource={RelativeSource Self},
+                    Path=(Validation.Errors)[0].ErrorContent}" />
+						<Setter Property="Foreground" Value="Red" />
+					</Trigger.Setters>
+				</Trigger>
+			</Style.Triggers>
+		</Style>
+	</Application.Resources>
+	
 
 </Application>

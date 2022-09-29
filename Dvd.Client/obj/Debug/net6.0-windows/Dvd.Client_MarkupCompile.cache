@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\App.xaml
-2790014476
+3-1543296740
 
-51061367845
+81082490794
 2301527982764
-MainWindow.xaml;Pages\Authentication.xaml;
+MainWindow.xaml;Pages\Authentication.xaml;Pages\Main.xaml;
 
 False
 

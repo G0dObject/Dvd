@@ -1,5 +1,6 @@
 ﻿using Dvd.Application.Authentication.Login;
 using Dvd.Application.Authentication.Register;
+using Dvd.Client.Model;
 using Dvd.Domain.Entity.Tables;
 using Dvd.Persistent;
 using Microsoft.EntityFrameworkCore;
@@ -14,31 +15,38 @@ namespace Client.Pages
 		private readonly Context _context;
 		private readonly UnitOfWork _unitOfWork;
 		private bool _isRegister = true;
+		private readonly RegisterModel command;
 		public Authentication()
 		{
-			InitializeComponent();
+			command = new RegisterModel();
+
 			_context = new Context(new DbContextOptions<Context>());
 			_unitOfWork = new UnitOfWork(_context);
+			InitializeComponent();
+			DataContext = command;
 		}
 
 		private void RegistrationButton(object sender, RoutedEventArgs e)
 		{
-			try
+			if (string.IsNullOrEmpty(command.Error))
 			{
-				RegisterCommand registerCommand = new(RUsername.Text, RPassword.Password, new Role() { Name = "User" });
-				RegisterCommandHandler handler = new(_unitOfWork);
-				_ = Task.Run(() => handler.Handle(registerCommand));
-			}
-			catch (Exception)
-			{
-				throw;
+				try
+				{
+					RegisterCommand registerCommand = new(RUsername.Text, RPassword.Text, new Role() { Name = "User" });
+					RegisterCommandHandler handler = new(_unitOfWork);
+					_ = Task.Run(() => handler.Handle(registerCommand));
+				}
+				catch (Exception)
+				{
+					throw;
+				}
 			}
 		}
 		private async void LoginButton(object sender, RoutedEventArgs e)
 		{
 			try
 			{
-				LoginQuery loginQuery = new(LUsername.Text, LPassword.Password);
+				LoginQuery loginQuery = new(LUsername.Text, LPassword.Text);
 				LoginQueryHandler handler = new(_unitOfWork);
 
 				int userid = await handler.Handle(loginQuery);
@@ -67,6 +75,10 @@ namespace Client.Pages
 				SwapButton.Content = "Login";
 				_isRegister = true;
 			}
+		}
+		private void Validate()
+		{
+
 		}
 	}
 }
