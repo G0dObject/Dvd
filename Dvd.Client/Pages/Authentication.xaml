@@ -7,7 +7,7 @@
 		xmlns:controls="http://metro.mahapps.com/winf/xaml/controls"
         mc:Ignorable="d"
         Title="Authentication" Height="1080" Width="1920
-" WindowStartupLocation="CenterScreen" WindowStyle="None" WindowState="Maximized" >
+" WindowStartupLocation="CenterScreen" WindowStyle="None" WindowState="Maximized">
 	<Grid>
 		<Image Margin="0,0,955,0" Source="/Public/Dvd.png" Stretch="Fill"/>
 

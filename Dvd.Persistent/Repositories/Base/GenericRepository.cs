@@ -33,9 +33,9 @@ namespace Dvd.Persistent.Repositories.Base
 		{
 			return _context.Set<T>().ToListAsync();
 		}
-		public Task<T?> GetByIdAsync(int id)
+		public virtual async Task<T?> GetByIdAsync(int id)
 		{
-			throw new NotImplementedException();
+			return await _context.Set<T>().FindAsync(id);
 		}
 
 		public Task<T?> LastAsync()

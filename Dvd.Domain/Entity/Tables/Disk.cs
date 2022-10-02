@@ -7,5 +7,6 @@ namespace Dvd.Domain.Entity.Tables
 		public string Name { get; set; }
 		public string AgeCategory { get; set; }
 		public bool IsTaken { get; set; }
+
 	}
 }

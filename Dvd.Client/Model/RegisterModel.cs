@@ -31,7 +31,7 @@ namespace Dvd.Client.Model
 						}
 						break;
 					case "PasswordConfirm":
-						if (PasswordConfirm != Password)
+						if (PasswordConfirm != Password || Password!.Length < 6 || columnName == null)
 						{
 							Error = "All password fields my be equals";
 						}

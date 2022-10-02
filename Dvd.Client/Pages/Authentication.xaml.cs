@@ -1,11 +1,11 @@
 ﻿using Dvd.Application.Authentication.Login;
 using Dvd.Application.Authentication.Register;
+using Dvd.Client;
 using Dvd.Client.Model;
 using Dvd.Domain.Entity.Tables;
 using Dvd.Persistent;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace Client.Pages
@@ -15,6 +15,7 @@ namespace Client.Pages
 		private readonly Context _context;
 		private readonly UnitOfWork _unitOfWork;
 		private bool _isRegister = true;
+		private int _userid;
 		private readonly RegisterModel command;
 		public Authentication()
 		{
@@ -26,7 +27,7 @@ namespace Client.Pages
 			DataContext = command;
 		}
 
-		private void RegistrationButton(object sender, RoutedEventArgs e)
+		private async void RegistrationButton(object sender, RoutedEventArgs e)
 		{
 			if (string.IsNullOrEmpty(command.Error))
 			{
@@ -34,7 +35,8 @@ namespace Client.Pages
 				{
 					RegisterCommand registerCommand = new(RUsername.Text, RPassword.Text, new Role() { Name = "User" });
 					RegisterCommandHandler handler = new(_unitOfWork);
-					_ = Task.Run(() => handler.Handle(registerCommand));
+					_ = await handler.Handle(registerCommand);
+					Ok();
 				}
 				catch (Exception)
 				{
@@ -49,8 +51,17 @@ namespace Client.Pages
 				LoginQuery loginQuery = new(LUsername.Text, LPassword.Text);
 				LoginQueryHandler handler = new(_unitOfWork);
 
-				int userid = await handler.Handle(loginQuery);
-				_ = userid == 0 ? MessageBox.Show("Login or Password incorrect") : MessageBox.Show("Loggin correct");
+				_userid = await handler.Handle(loginQuery);
+				if (_userid == 0)
+				{
+					_ = MessageBox.Show("Login or Password incorrect");
+
+				}
+				else
+				{
+					Ok();
+				}
+
 			}
 			catch (Exception)
 			{
@@ -76,9 +87,14 @@ namespace Client.Pages
 				_isRegister = true;
 			}
 		}
-		private void Validate()
+		private async void Ok()
 		{
+			User? user = await _unitOfWork.Authorization.GetByIdAsync(_userid);
+			MainWindow mainWindow = new(_unitOfWork, user!.Role);
+			Hide();
 
+			mainWindow.Show();
+			Close();
 		}
 	}
 }

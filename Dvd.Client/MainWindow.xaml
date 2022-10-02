@@ -5,8 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dvd.Client"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="1080" Width="1920" WindowStartupLocation="CenterScreen" WindowStyle="None" WindowState="Maximized">
+	<Grid>
+		<Grid.Background>
+			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+				<GradientStop Color="#FF130727" Offset="0.04"/>
+				<GradientStop Color="#FF2A0F58" Offset="1"/>
+			</LinearGradientBrush>
+		</Grid.Background>
+		<DataGrid FontSize="30" Name="datagrid" Margin="0,0,420,0" BorderBrush="#FF07CAC1" Background="#FF07CAC1">
+			<DataGrid.Columns>
+				<DataGridTextColumn Binding="{Binding Path=Name}" Header="Name" Width="400"/>
+				<DataGridTextColumn Binding="{Binding Path=AgeCategory}" Header="AgeCategory" Width="400"/>
+				<DataGridTextColumn Binding="{Binding Path=IsTaken}" Header="Availability" Width="400"/>
 
-    </Grid>
+				<DataGridTemplateColumn  Header="Get" Width="*">
+					<DataGridTemplateColumn.CellTemplate>
+						<DataTemplate >
+							<Button Height="auto" Width="300" Content="Add" Click="Button_Click" />
+						</DataTemplate>
+					</DataGridTemplateColumn.CellTemplate>
+				</DataGridTemplateColumn>
+			</DataGrid.Columns>
+		</DataGrid>
+		<Button Content="🔃" FontSize="30" HorizontalAlignment="Left" Margin="1451,0,0,0" VerticalAlignment="Top" Height="49" RenderTransformOrigin="0.58,0.586" Width="49" Click="LoadData_Click" Background="{x:Null}">
+			<Button.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleY="1"/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Button.RenderTransform>
+		</Button>
+
+	</Grid>
 </Window>

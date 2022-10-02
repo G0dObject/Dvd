@@ -12,10 +12,11 @@ namespace Dvd.Persistent
 		{
 			_context = context;
 			Authorization = new AuthorizationRepository(context);
+			Disk = new DiskReposotory(context);
 		}
 
 		public IAuthorizationRepository Authorization { get; set; }
-
+		public IDiskRepository Disk { get; set; }
 		public virtual void Dispose()
 		{
 			if (!_disposed)

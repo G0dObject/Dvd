@@ -4,7 +4,7 @@
 		{
 			public static async Task Initialize(this Context context)
 			{
-				_ = await context.Database.EnsureDeletedAsync();
+				//_ = await context.Database.EnsureDeletedAsync();
 
 				_ = await context.Database.EnsureCreatedAsync();
 			}
