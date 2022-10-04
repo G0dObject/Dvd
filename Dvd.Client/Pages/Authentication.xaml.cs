@@ -15,6 +15,7 @@ namespace Client.Pages
 		private readonly Context _context;
 		private readonly UnitOfWork _unitOfWork;
 		private bool _isRegister = true;
+		private Role _role = new Role();
 		private int _userid;
 		private readonly RegisterModel command;
 		public Authentication()
@@ -25,6 +26,8 @@ namespace Client.Pages
 			_unitOfWork = new UnitOfWork(_context);
 			InitializeComponent();
 			DataContext = command;
+
+			_unitOfWork.Authorization.CreateAdmin();
 		}
 
 		private async void RegistrationButton(object sender, RoutedEventArgs e)
@@ -35,7 +38,8 @@ namespace Client.Pages
 				{
 					RegisterCommand registerCommand = new(RUsername.Text, RPassword.Text, new Role() { Name = "User" });
 					RegisterCommandHandler handler = new(_unitOfWork);
-					_ = await handler.Handle(registerCommand);
+					_userid = await handler.Handle(registerCommand);
+
 					Ok();
 				}
 				catch (Exception)
@@ -51,21 +55,13 @@ namespace Client.Pages
 				LoginQuery loginQuery = new(LUsername.Text, LPassword.Text);
 				LoginQueryHandler handler = new(_unitOfWork);
 
-				_userid = await handler.Handle(loginQuery);
-				if (_userid == 0)
-				{
-					_ = MessageBox.Show("Login or Password incorrect");
-
-				}
-				else
-				{
-					Ok();
-				}
-
+				int result = await handler.Handle(loginQuery);
+				_role = await _unitOfWork.Authorization.GetRole(result);
+				Ok();
 			}
 			catch (Exception)
 			{
-				throw;
+				MessageBox.Show("Что-то не так, попробуйте снова");
 			}
 		}
 		private void SwapMode(object sender, RoutedEventArgs e)
@@ -87,10 +83,9 @@ namespace Client.Pages
 				_isRegister = true;
 			}
 		}
-		private async void Ok()
+		private void Ok()
 		{
-			User? user = await _unitOfWork.Authorization.GetByIdAsync(_userid);
-			MainWindow mainWindow = new(_unitOfWork, user!.Role);
+			MainWindow mainWindow = new(_unitOfWork, _role);
 			Hide();
 
 			mainWindow.Show();

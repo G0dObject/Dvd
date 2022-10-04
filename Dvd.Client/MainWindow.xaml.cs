@@ -13,13 +13,23 @@ namespace Dvd.Client
 	public partial class MainWindow : Window
 	{
 		private readonly IUnitOfWork _unitOfWork;
+		private bool _visibility;
 		public MainWindow(IUnitOfWork unitOfWork, Role role)
 		{
+			
 			_unitOfWork = unitOfWork;
 			InitializeComponent();
+			Show.Visibility = Visibility.Hidden;
 			LoadData();
+			if (SideBar.Visibility == Visibility.Visible)
+			{
+				_visibility = true;
+			}
 
-
+			if (role.Name=="Admin")
+				Show.Visibility = Visibility.Visible;
+			
+			
 		}
 		private void Application_Exit(object sender, System.Windows.ExitEventArgs e)
 		{
@@ -51,11 +61,31 @@ namespace Dvd.Client
 				if (vis is DataGridRow)
 				{
 					var row = (DataGridRow)vis;
-					row.DetailsVisibility =
-					row.DetailsVisibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
-					break;
+					
 				}
 			}
+		}
+
+		private void Button_Click_1(object sender, RoutedEventArgs e)
+		{
+			if (_visibility)
+			{
+				SideBar.Visibility = Visibility.Hidden;
+				_visibility = false;
+			}
+			else
+			{
+				SideBar.Visibility = Visibility.Visible;
+				_visibility = true;
+			}
+			
+		}
+
+		private void Button_Click_2(object sender, RoutedEventArgs e)
+		{
+			bool taken = Available.IsChecked??false;
+			_unitOfWork.Disk.CreateAsync(new Disk() { Name = this.Name.Text, AgeCategory = AgeCategory.Text, IsTaken = taken });
+			LoadData();
 		}
 	}
 }
