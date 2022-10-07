@@ -8,5 +8,6 @@ namespace Dvd.Application.Interfaces.BusinessLogic
         public Task<Role> GetDefaultRole();
         public Task<Role> GetRole(int id);
         public Task CreateAdmin();
-    }
+        public Task<bool> Exist(string name);
+	}
 }

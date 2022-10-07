@@ -21,6 +21,7 @@ namespace Dvd.Application.Authentication.Register
 				Role = await _unitOfWork.Authorization.GetDefaultRole()
 				
 			};
+			
 			var result = _unitOfWork.Authorization.CreateAsync(current);
 
 			return result.Id;

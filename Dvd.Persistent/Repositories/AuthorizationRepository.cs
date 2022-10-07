@@ -17,13 +17,14 @@ namespace Dvd.Persistent.Repositories
 
 		public async Task CreateAdmin()
 		{
-			if (_context!.Users!.Where(f => f.UserName == "Admin1")== null);
+
+			if (await Exist("Admin1")) ;
 			{
-				await _context!.Users.AddAsync(new User { Role = new Role { Name = "Admin" }, Password = "Admin1", UserName = "Admin1" });
+				await _context!.Users!.AddAsync(new User { Role = new Role { Name = "Admin" }, Password = "Admin1", UserName = "Admin1" });
 				await _context!.SaveChangesAsync();
 			}
-			
 		}
+
 
 		public async Task<Role> GetDefaultRole()
 		{
@@ -35,10 +36,18 @@ namespace Dvd.Persistent.Repositories
 			Role result = await _context!.Roles!.FirstAsync(f => f.Name == _defaultRole);
 			return result;
 		}
-
+		public async Task<bool> Exist(string name)
+		{
+			var c = await _context!.Users!.FirstOrDefaultAsync(u => u.UserName == name);
+			if (c==null)
+			{
+				return false;
+			}
+			return true;
+		}
 		public async Task<Role> GetRole(int id)
 		{
-			Role? role = await _context!.Roles!.FirstOrDefaultAsync(f => f.Id == id);
+			Role? role = await _context!.Roles!.FirstOrDefaultAsync(u => u.Id == id);
 			return role ?? throw new NullReferenceException();
 		}
 	}

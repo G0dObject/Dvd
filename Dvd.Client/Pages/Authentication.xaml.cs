@@ -38,6 +38,12 @@ namespace Client.Pages
 				{
 					RegisterCommand registerCommand = new(RUsername.Text, RPassword.Text, new Role() { Name = "User" });
 					RegisterCommandHandler handler = new(_unitOfWork);
+
+					if (await _unitOfWork.Authorization.Exist(registerCommand.UserName!))
+					{
+						MessageBox.Show("user already registered");
+						return;
+					}
 					_userid = await handler.Handle(registerCommand);
 
 					Ok();
@@ -54,8 +60,10 @@ namespace Client.Pages
 			{
 				LoginQuery loginQuery = new(LUsername.Text, LPassword.Text);
 				LoginQueryHandler handler = new(_unitOfWork);
-
+				
 				int result = await handler.Handle(loginQuery);
+				
+				
 				_role = await _unitOfWork.Authorization.GetRole(result);
 				Ok();
 			}
