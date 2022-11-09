@@ -1,5 +1,4 @@
-﻿using Dvd.Application.Interfaces;
-using Dvd.Application.Interfaces.BusinessLogic;
+﻿using Dvd.Application.Interfaces.BusinessLogic;
 using Dvd.Domain.Entity.Tables;
 using Dvd.Persistent.Repositories.Base;
 using Microsoft.EntityFrameworkCore;
@@ -18,13 +17,20 @@ namespace Dvd.Persistent.Repositories
 		public async Task CreateAdmin()
 		{
 
-			if (await Exist("Admin1")) ;
+			if (Exist("Admin1").Result == false)
 			{
-				await _context!.Users!.AddAsync(new User { Role = new Role { Name = "Admin" }, Password = "Admin1", UserName = "Admin1" });
+				await _context!.Users!.AddAsync(new User
+				{
+					Role = new Role
+					{ Name = "Admin" }
+				,
+					Password = "Admin1",
+					UserName = "Admin1"
+				});
+				
 				await _context!.SaveChangesAsync();
 			}
 		}
-
 
 		public async Task<Role> GetDefaultRole()
 		{
@@ -39,7 +45,7 @@ namespace Dvd.Persistent.Repositories
 		public async Task<bool> Exist(string name)
 		{
 			var c = await _context!.Users!.FirstOrDefaultAsync(u => u.UserName == name);
-			if (c==null)
+			if (c == null)
 			{
 				return false;
 			}

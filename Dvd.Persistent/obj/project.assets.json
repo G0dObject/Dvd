@@ -879,21 +879,21 @@
           }
         }
       },
-      "Cqrs/1.0.0": {
+      "Cqrs.ForStupid/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/Cqrs.dll": {}
+          "bin/placeholder/Cqrs.ForStupid.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Cqrs.dll": {}
+          "bin/placeholder/Cqrs.ForStupid.dll": {}
         }
       },
       "Dvd.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Cqrs": "1.0.0",
+          "Cqrs.ForStupid": "1.0.0",
           "Dvd.Domain": "1.0.0",
           "MediatR": "10.0.1",
           "Microsoft.EntityFrameworkCore": "6.0.9"
@@ -2078,7 +2078,7 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Cqrs/1.0.0": {
+    "Cqrs.ForStupid/1.0.0": {
       "type": "project",
       "path": "../Cqrs/Cqrs.csproj",
       "msbuildProject": "../Cqrs/Cqrs.csproj"
@@ -2107,7 +2107,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vladi\\.nuget\\packages\\": {}
+    "C:\\Users\\vladi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -2118,8 +2119,12 @@
       "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Persistent\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2127,6 +2132,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2193,7 +2199,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

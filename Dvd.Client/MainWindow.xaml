@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="1080" Width="1920" WindowStartupLocation="CenterScreen" WindowStyle="None" WindowState="Maximized">
 	<Grid>
-
 		<Grid.Background>
 			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
 				<GradientStop Color="#FF130727" Offset="0.04"/>
@@ -22,10 +21,23 @@
 			<Label Foreground="White" FontSize="30" Content="Available" HorizontalAlignment="Left" Margin="156,269,0,0" VerticalAlignment="Top" Height="58" Width="198" HorizontalContentAlignment="Center"/>
 			<Button Content="Append" Background="White" FontSize="30" BorderBrush="Aqua" BorderThickness="1" HorizontalAlignment="Left" Margin="100,478,0,0" VerticalAlignment="Top" Height="46" Width="284" Click="Button_Click_2"/>
 			<CheckBox Name="Available"  FontSize="30"   HorizontalAlignment="Left" Margin="329,290,0,0" VerticalAlignment="Top"/>
+		</Grid>
+		<Grid Name="CartBar" Panel.ZIndex="1"  Width="500"  Visibility="Visible" HorizontalAlignment="Right" Background="#FF2A0F58">
+			<DataGrid Name="CartGrid" Margin="0,56,0,110">
+				<DataGrid.Columns >
+					<DataGridTextColumn Binding="{Binding Path=Name}" FontSize="30" Header="Name" Width="1300">
+
+					</DataGridTextColumn>
+				</DataGrid.Columns>
+			</DataGrid>
+			<Button Content="Распечатать" FontSize="15px" HorizontalAlignment="Center" Margin="0,992,0,0" VerticalAlignment="Top" Height="56" Width="198"/>
+
+
 
 
 		</Grid>
-		<DataGrid FontSize="30" Name="datagrid" BorderBrush="#FF07CAC1" Background="#FF07CAC1">
+
+		<DataGrid FontSize="30" Name="datagrid" BorderBrush="#FF07CAC1" Background="#FF07CAC1"  >
 			<DataGrid.Columns>
 				<DataGridTextColumn Binding="{Binding Path=Name}" Header="Name" Width="400"/>
 				<DataGridTextColumn Binding="{Binding Path=AgeCategory}" Header="AgeCategory" Width="400"/>
@@ -38,21 +50,20 @@
 						</DataTemplate>
 					</DataGridTemplateColumn.CellTemplate>
 				</DataGridTemplateColumn>
+				<DataGridTemplateColumn Width="575">
+					<DataGridTemplateColumn.Header>
+
+						<Button BorderThickness="0" Content="🔃"  FontSize="30" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="49" RenderTransformOrigin="0.58,0.586" Width="49" Click="LoadData_Click" Background="{x:Null}"/>
+					</DataGridTemplateColumn.Header>
+
+				</DataGridTemplateColumn>
+
 			</DataGrid.Columns>
 		</DataGrid>
-		<Button Content="🔃" FontSize="30" HorizontalAlignment="Left" Margin="1369,0,0,0" VerticalAlignment="Top" Height="49" RenderTransformOrigin="0.58,0.586" Width="49" Click="LoadData_Click" Background="{x:Null}">
-			<Button.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform ScaleY="1"/>
-					<SkewTransform/>
-					<RotateTransform/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Button.RenderTransform>
-		</Button>
-		<Button Name="Show" Content="Add" Panel.ZIndex="1" Click="Button_Click_1" Margin="1871,0,0,1031"/>
 
 
+		<Button Name="Show" Visibility="Hidden"  Content="+" FontSize="40" Background="Transparent" BorderThickness="0" Panel.ZIndex="1" Click="Button_Click_1" Margin="1817,0,54,1031"/>
+		<Button Name="Cart" Visibility="Visible" Content="🛒" FontSize="30" Panel.ZIndex="1" Background="Transparent" BorderThickness="0"  Margin="1871,0,0,1031" Click="Cart_Click"/>
 
 	</Grid>
 </Window>

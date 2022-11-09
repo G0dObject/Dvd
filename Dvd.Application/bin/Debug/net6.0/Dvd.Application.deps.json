@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Dvd.Application/1.0.0": {
         "dependencies": {
-          "Cqrs": "1.0.0",
+          "Cqrs.ForStupid": "1.0.0",
           "Dvd.Domain": "1.0.0",
           "MediatR": "10.0.1",
           "Microsoft.EntityFrameworkCore": "6.0.9"
@@ -165,7 +165,7 @@
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
-      "Cqrs/1.0.0": {
+      "Cqrs.ForStupid/1.0.0": {
         "runtime": {
           "Cqrs.dll": {}
         }
@@ -295,7 +295,7 @@
       "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
     },
-    "Cqrs/1.0.0": {
+    "Cqrs.ForStupid/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
