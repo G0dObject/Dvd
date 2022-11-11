@@ -79,3 +79,11 @@ C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.
 C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\AutoMapper.dll
 C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\ReactiveValidation.dll
 C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\obj\Debug\net6.0-windows\App.baml
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\Microsoft.Office.Interop.Word.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\Aspose.Words.Pdf2Word.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\Aspose.Words.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\SkiaSharp.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Client\bin\Debug\net6.0-windows\runtimes\win-x86\native\libSkiaSharp.dll

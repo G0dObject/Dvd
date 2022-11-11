@@ -60,10 +60,9 @@ namespace Client.Pages
 			{
 				LoginQuery loginQuery = new(LUsername.Text, LPassword.Text);
 				LoginQueryHandler handler = new(_unitOfWork);
-				
+
 				int result = await handler.Handle(loginQuery);
-				
-				
+
 				_role = await _unitOfWork.Authorization.GetRole(result);
 				Ok();
 			}

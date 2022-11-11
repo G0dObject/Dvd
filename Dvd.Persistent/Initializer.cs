@@ -1,12 +1,12 @@
 ﻿namespace Dvd.Persistent
 {
 	public static class Initializer
+	{
+		public static async Task Initialize(this Context context)
 		{
-			public static async Task Initialize(this Context context)
-			{
-				//_ = await context.Database.EnsureDeletedAsync();
+			//_ = await context.Database.EnsureDeletedAsync();
 
-				_ = await context.Database.EnsureCreatedAsync();
-			}
+			_ = await context.Database.EnsureCreatedAsync();
 		}
+	}
 }

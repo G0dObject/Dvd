@@ -4,9 +4,9 @@ using Dvd.Persistent.Repositories;
 
 namespace Dvd.Persistent
 {
-	public class UnitOfWork : IUnitOfWork,IDisposable
+	public class UnitOfWork : IUnitOfWork, IDisposable
 	{
-		private Context _context; 
+		private Context _context;
 		private bool _disposed = false;
 		public UnitOfWork(Context context)
 		{

@@ -30,7 +30,7 @@
 					</DataGridTextColumn>
 				</DataGrid.Columns>
 			</DataGrid>
-			<Button Content="Распечатать" FontSize="15px" HorizontalAlignment="Center" Margin="0,992,0,0" VerticalAlignment="Top" Height="56" Width="198"/>
+			<Button Content="Распечатать" FontSize="15px" HorizontalAlignment="Center" Margin="0,992,0,0" VerticalAlignment="Top" Height="56" Width="198" Click="Button_Click_3"/>
 
 
 
