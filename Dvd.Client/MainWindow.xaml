@@ -39,14 +39,14 @@
 
 		<DataGrid FontSize="30" Name="datagrid" BorderBrush="#FF07CAC1" Background="#FF07CAC1"  >
 			<DataGrid.Columns>
-				<DataGridTextColumn Binding="{Binding Path=Name}" Header="Name" Width="400"/>
-				<DataGridTextColumn Binding="{Binding Path=AgeCategory}" Header="AgeCategory" Width="400"/>
-				<DataGridTextColumn Binding="{Binding Path=IsTaken}" Header="Availability" Width="400"/>
+				<DataGridTextColumn Binding="{Binding Path=Name}" Header="Имя" Width="400"/>
+				<DataGridTextColumn Binding="{Binding Path=AgeCategory}" Header="Возрастная категория" Width="400"/>
+				<DataGridTextColumn Binding="{Binding Path=IsTaken}" Header="Наличие" Width="400"/>
 
-				<DataGridTemplateColumn  Header="Get" Width="140">
+				<DataGridTemplateColumn  Header="Получить" Width="140">
 					<DataGridTemplateColumn.CellTemplate>
 						<DataTemplate >
-							<Button Height="auto" Width="140" Content="Add" Click="Button_Click" />
+							<Button Height="auto" Width="140" Content="Добавить" Click="Button_Click" />
 						</DataTemplate>
 					</DataGridTemplateColumn.CellTemplate>
 				</DataGridTemplateColumn>

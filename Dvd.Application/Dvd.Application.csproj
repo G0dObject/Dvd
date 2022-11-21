@@ -7,12 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CQRS.My" Version="1.0.0" />
     <PackageReference Include="MediatR" Version="10.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.9" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Cqrs\Cqrs.csproj" />
     <ProjectReference Include="..\Dvd.Domain\Dvd.Domain.csproj" />
   </ItemGroup>
 

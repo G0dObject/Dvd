@@ -1,4 +1,4 @@
-﻿using Cqrs.Command;
+﻿using CQRS.Command;
 using Dvd.Application.Interfaces;
 using Dvd.Domain.Entity.Tables;
 
@@ -19,11 +19,9 @@ namespace Dvd.Application.Authentication.Register
 				UserName = request.UserName,
 				Password = request.Password,
 				Role = await _unitOfWork.Authorization.GetDefaultRole()
-				
 			};
 			
 			var result = _unitOfWork.Authorization.CreateAsync(current);
-
 			return result.Id;
 		}
 	}

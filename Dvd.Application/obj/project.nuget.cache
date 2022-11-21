@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "sPgg0ijmb2WtytDg4DTxx8E57Wwdn7KjjlkdGZzmFM3FIklNqX8wFdxyD/xCCdRFPNaxp3BsB+WVw6Egf3u9og==",
+  "dgSpecHash": "ZssOGgiq0ljEzUKmwDppSlOhNiWAiLGX8fSxxRM3o9IUV5OjnZscGSo/d++e5ikdlMskeKZS5ST3k/7NIGUk+w==",
   "success": true,
   "projectFilePath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Application\\Dvd.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\vladi\\.nuget\\packages\\cqrs.my\\1.0.0\\cqrs.my.1.0.0.nupkg.sha512",
     "C:\\Users\\vladi\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\vladi\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\vladi\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.9\\microsoft.entityframeworkcore.6.0.9.nupkg.sha512",

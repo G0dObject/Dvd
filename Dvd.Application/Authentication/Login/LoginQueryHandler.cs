@@ -1,4 +1,4 @@
-﻿using Cqrs.Query;
+﻿using CQRS.Query;
 using Dvd.Application.Interfaces;
 using Dvd.Domain.Entity.Tables;
 

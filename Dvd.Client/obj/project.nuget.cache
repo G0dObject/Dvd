@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "0KmsV4JtAobQiNd21cfX2Sm44IEY4WxhIoUSaJmoG5Mg/9YDaTIBB0E0qZ4+OvBaJ5CVSPMrmpwkRYQr//cwow==",
+  "dgSpecHash": "ioEDzd1tpPn32Pw6YWGHkI5z384eJ+RG14+tBktqWih4/fxTmrTPHvgqQIKZ3JAFVlaRm2zdB6IWuiVzaGeHPg==",
   "success": true,
   "projectFilePath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Client\\Dvd.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vladi\\.nuget\\packages\\aspose.words\\22.11.0\\aspose.words.22.11.0.nupkg.sha512",
     "C:\\Users\\vladi\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\vladi\\.nuget\\packages\\cqrs.my\\1.0.0\\cqrs.my.1.0.0.nupkg.sha512",
     "C:\\Users\\vladi\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
     "C:\\Users\\vladi\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
     "C:\\Users\\vladi\\.nuget\\packages\\k4os.compression.lz4.streams\\1.2.6\\k4os.compression.lz4.streams.1.2.6.nupkg.sha512",

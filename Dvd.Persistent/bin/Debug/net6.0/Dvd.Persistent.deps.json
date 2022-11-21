@@ -32,6 +32,14 @@
           }
         }
       },
+      "CQRS.My/1.0.0": {
+        "runtime": {
+          "lib/net6.0/CQRS.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Google.Protobuf/3.19.4": {
         "runtime": {
           "lib/net5.0/Google.Protobuf.dll": {
@@ -572,14 +580,9 @@
           }
         }
       },
-      "Cqrs.ForStupid/1.0.0": {
-        "runtime": {
-          "Cqrs.dll": {}
-        }
-      },
       "Dvd.Application/1.0.0": {
         "dependencies": {
-          "Cqrs.ForStupid": "1.0.0",
+          "CQRS.My": "1.0.0",
           "Dvd.Domain": "1.0.0",
           "MediatR": "10.0.1",
           "Microsoft.EntityFrameworkCore": "6.0.9"
@@ -607,6 +610,13 @@
       "sha512": "sha512-WIadGC1pIwbnyTubvI577p3F++Bsj9q2Q3OaAc1I0QS+JhupN1xkdrPBhI9bPIeg63zM81tZplUNYkqU1HE5jQ==",
       "path": "automapper/11.0.1",
       "hashPath": "automapper.11.0.1.nupkg.sha512"
+    },
+    "CQRS.My/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P3vQcZHaM6u1arSTEhpbXRWJmy18Vkr+v1x7Ls2J977aLrk97922U/P67zLkk0uyVpqRHkCtqWQdsHEPrQsdBQ==",
+      "path": "cqrs.my/1.0.0",
+      "hashPath": "cqrs.my.1.0.0.nupkg.sha512"
     },
     "Google.Protobuf/3.19.4": {
       "type": "package",
@@ -936,11 +946,6 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
-    },
-    "Cqrs.ForStupid/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "Dvd.Application/1.0.0": {
       "type": "project",

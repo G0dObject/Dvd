@@ -8,13 +8,21 @@
     ".NETCoreApp,Version=v6.0": {
       "Dvd.Application/1.0.0": {
         "dependencies": {
-          "Cqrs.ForStupid": "1.0.0",
+          "CQRS.My": "1.0.0",
           "Dvd.Domain": "1.0.0",
           "MediatR": "10.0.1",
           "Microsoft.EntityFrameworkCore": "6.0.9"
         },
         "runtime": {
           "Dvd.Application.dll": {}
+        }
+      },
+      "CQRS.My/1.0.0": {
+        "runtime": {
+          "lib/net6.0/CQRS.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "MediatR/10.0.1": {
@@ -165,11 +173,6 @@
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
-      "Cqrs.ForStupid/1.0.0": {
-        "runtime": {
-          "Cqrs.dll": {}
-        }
-      },
       "Dvd.Domain/1.0.0": {
         "runtime": {
           "Dvd.Domain.dll": {}
@@ -182,6 +185,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "CQRS.My/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P3vQcZHaM6u1arSTEhpbXRWJmy18Vkr+v1x7Ls2J977aLrk97922U/P67zLkk0uyVpqRHkCtqWQdsHEPrQsdBQ==",
+      "path": "cqrs.my/1.0.0",
+      "hashPath": "cqrs.my.1.0.0.nupkg.sha512"
     },
     "MediatR/10.0.1": {
       "type": "package",
@@ -294,11 +304,6 @@
       "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
       "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
-    },
-    "Cqrs.ForStupid/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "Dvd.Domain/1.0.0": {
       "type": "project",

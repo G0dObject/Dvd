@@ -1,4 +1,4 @@
-﻿using Cqrs.Command;
+﻿using CQRS.Command;
 using Dvd.Domain.Entity.Tables;
 using System.ComponentModel.DataAnnotations;
 

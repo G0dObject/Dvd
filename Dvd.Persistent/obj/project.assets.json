@@ -18,6 +18,15 @@
           }
         }
       },
+      "CQRS.My/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CQRS.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CQRS.dll": {}
+        }
+      },
       "Google.Protobuf/3.19.4": {
         "type": "package",
         "compile": {
@@ -879,21 +888,11 @@
           }
         }
       },
-      "Cqrs.ForStupid/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/Cqrs.ForStupid.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Cqrs.ForStupid.dll": {}
-        }
-      },
       "Dvd.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Cqrs.ForStupid": "1.0.0",
+          "CQRS.My": "1.0.0",
           "Dvd.Domain": "1.0.0",
           "MediatR": "10.0.1",
           "Microsoft.EntityFrameworkCore": "6.0.9"
@@ -931,6 +930,18 @@
         "icon.png",
         "lib/netstandard2.1/AutoMapper.dll",
         "lib/netstandard2.1/AutoMapper.xml"
+      ]
+    },
+    "CQRS.My/1.0.0": {
+      "sha512": "P3vQcZHaM6u1arSTEhpbXRWJmy18Vkr+v1x7Ls2J977aLrk97922U/P67zLkk0uyVpqRHkCtqWQdsHEPrQsdBQ==",
+      "type": "package",
+      "path": "cqrs.my/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cqrs.my.1.0.0.nupkg.sha512",
+        "cqrs.my.nuspec",
+        "lib/net6.0/CQRS.dll"
       ]
     },
     "Google.Protobuf/3.19.4": {
@@ -2077,11 +2088,6 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "Cqrs.ForStupid/1.0.0": {
-      "type": "project",
-      "path": "../Cqrs/Cqrs.csproj",
-      "msbuildProject": "../Cqrs/Cqrs.csproj"
     },
     "Dvd.Application/1.0.0": {
       "type": "project",

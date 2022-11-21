@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "U7mq+LjJ6mW37zRNWSVocsuHe2iK7AUE+jYaEhe3RwdQY5MEh0was9+XZDx7i8o24y9n7LtICh3djEQDmCXRtQ==",
+  "dgSpecHash": "uAkV31mxWBMl8j/H4uweQ9Q94DJFY8SHSihwvtzGDuQ5/+d5iixcEW4L6piZIAUpWNWWsefqO1Quo5AULSOEgg==",
   "success": true,
   "projectFilePath": "C:\\Users\\vladi\\OneDrive\\Документы\\DotNet\\DVD\\Dvd.Persistent\\Dvd.Persistent.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vladi\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\vladi\\.nuget\\packages\\cqrs.my\\1.0.0\\cqrs.my.1.0.0.nupkg.sha512",
     "C:\\Users\\vladi\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
     "C:\\Users\\vladi\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
     "C:\\Users\\vladi\\.nuget\\packages\\k4os.compression.lz4.streams\\1.2.6\\k4os.compression.lz4.streams.1.2.6.nupkg.sha512",

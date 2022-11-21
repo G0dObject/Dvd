@@ -6,7 +6,6 @@ using System.Drawing.Printing;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Documents;
 using System.Windows.Media;
 using Brushes = System.Drawing.Brushes;
 using Window = System.Windows.Window;
@@ -128,7 +127,7 @@ namespace Dvd.Client
 			printDocument.PrintPage += PrintPageHandler;
 
 			PrintDialog printDialog = new PrintDialog();
-			
+
 			if (printDialog.ShowDialog() == true)
 			{
 				printDocument.Print();
@@ -138,6 +137,8 @@ namespace Dvd.Client
 
 		private void Button_Click_3(object sender, RoutedEventArgs e)
 		{
+
+
 			CreateDocument();
 		}
 
@@ -145,8 +146,8 @@ namespace Dvd.Client
 		void PrintPageHandler(object sender, PrintPageEventArgs e)
 		{
 			e.Graphics.DrawString(_text, new Font("Arial", 14), Brushes.Black, 0, 0);
-			
-				
+
+
 		}
 	}
 }

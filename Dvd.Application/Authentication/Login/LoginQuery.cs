@@ -1,4 +1,4 @@
-﻿using Cqrs.Query;
+﻿using CQRS.Query;
 using System.ComponentModel.DataAnnotations;
 
 namespace Dvd.Application.Authentication.Login

@@ -15,5 +15,3 @@ C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Persistent\obj\Debug\n
 C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Persistent\obj\Debug\net6.0\refint\Dvd.Persistent.dll
 C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Persistent\obj\Debug\net6.0\Dvd.Persistent.pdb
 C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Persistent\obj\Debug\net6.0\ref\Dvd.Persistent.dll
-C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Persistent\bin\Debug\net6.0\Cqrs.dll
-C:\Users\vladi\OneDrive\Документы\DotNet\DVD\Dvd.Persistent\bin\Debug\net6.0\Cqrs.pdb
